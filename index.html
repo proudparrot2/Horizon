@@ -62,9 +62,11 @@
       <p>Games</p>
     </div>
     <div class="taskbar" bottom="" id="taskbar">
-      <div class="startic"><span class="material-symbols-outlined">wb_twilight</span>HorizonOS</div>
+      <div class="startic" style="display: flex; align-items: center;" onclick="startApp('apps/browser')"><span class="material-symbols-outlined" style="margin-right: 5px;">wb_twilight</span>HorizonOS</div>
+
       <div class="startic" onclick="openTaskMenu()"><span class="material-symbols-outlined">apps</span></div>
       <div class="startic" onclick="openGamesMenu()"><span class="material-symbols-outlined">sports_esports</span></div>
+      <div class="startic" onclick="startApp('apps/settings')"><span class="material-symbols-outlined">settings</span></div> 
       <div class="openedapps" id="openedapps"></div>
       <div class="date" id="dateplace">00:00:00</div>
     </div>

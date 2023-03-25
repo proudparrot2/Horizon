@@ -36,8 +36,9 @@ function startApp(package, params = {}) {
                     <div class="header"${headermax} id="header${vfs.vmem.windowcounts}"${styles}>
                         <div class="title" id="title${vfs.vmem.windowcounts}">${res['title']}</div>
                         <div class="buttons" id="buttons${vfs.vmem.windowcounts}">
+                        <div maxim onclick="doWithWindow('${String(vfs.vmem.windowcounts)}', 'maximize')" ${winmaxim}></div>
                             <div minim onclick="doWithWindow('${String(vfs.vmem.windowcounts)}', 'minimize')" ${winminim}></div>
-                            <div maxim onclick="doWithWindow('${String(vfs.vmem.windowcounts)}', 'maximize')" ${winmaxim}></div>
+                            
                             <div close onclick="doWithWindow('${String(vfs.vmem.windowcounts)}', 'close')" ${winclose}></div>
                         </div>
                     </div>
