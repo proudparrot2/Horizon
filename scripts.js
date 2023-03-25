@@ -30,9 +30,3 @@ if (!inFrame && !navigator.userAgent.includes("Firefox")) {
         location.replace("https://google.com")
     }
 }
-n =  new Date();
-y = n.getFullYear();
-m = n.getMonth() + 1;
-d = n.getDate();
-document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
-function ShowTime = alert("m + "/" + d + "/" + y;)
