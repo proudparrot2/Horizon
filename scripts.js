@@ -1,5 +1,4 @@
-
-let inFrame
+/*let inFrame
 
 try {
     inFrame = window !== top
@@ -29,4 +28,4 @@ if (!inFrame && !navigator.userAgent.includes("Firefox")) {
         doc.body.appendChild(iframe)
         location.replace("https://google.com")
     }
-}
+}*/
