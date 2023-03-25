@@ -667,6 +667,30 @@ function openTaskMenu(perform = 'default') {
         }
     }
 }
+function openGamesMenu(perform = 'default') {
+    vfs.vmem.activewindow = false;
+    let taskmenu = document.getElementById('taskmenu');
+    if (perform == 'close') {
+        if (taskmenu.hasAttribute('opened')) {
+            taskmenu.style.top = '-100%';
+            taskmenu.removeAttribute('opened');
+            document.querySelector('.startic').removeAttribute('active');
+        }
+    }
+    else {
+        if (taskmenu.hasAttribute('opened')) {
+            taskmenu.style.top = '-100%';
+            taskmenu.removeAttribute('opened');
+            document.querySelector('.startic').removeAttribute('active');
+        }
+        else {
+            doWithAllWindows('unactive');
+            taskmenu.style.top = '35px';
+            taskmenu.setAttribute('opened', '');
+            document.querySelector('.startic').setAttribute('active', '');
+        }
+    }
+}
 function decodeHTMLEntities(text) {
     let textArea = document.createElement('textarea');
     textArea.innerHTML = text;

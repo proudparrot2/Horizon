@@ -9,6 +9,17 @@ function setApps() {
         document.getElementById(vfs.vmem.glts).append(div);
     }
 }
+function setGames() {
+    for (let app of vfs.games) {
+        let div = document.createElement('div');
+        div.innerHTML = `
+        <div class="package" onclick="startApp('${app.path}')">
+            <img src="${app.icon}">
+            <p>${app.name}</p>
+        </div>`;
+        document.getElementById(vfs.vmem.glts).append(div);
+    }
+}
 function setWallpaper(path) {
     document.getElementById(vfs.vmem.glct).style.backgroundImage = `url('${path}')`;
 }

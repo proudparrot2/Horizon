@@ -11,6 +11,9 @@
         {"name": "Terminal", "icon": "apps/terminal/icon.png", "path": "apps/terminal"}
         
     ],
+    "games": [
+        {"name": "Minecraft 1.5.2", "icon": "apps/minecraft/icon.png", "path": "apps/minecraft"}
+    ],
     "vmem": {
         "windows": [],
         "svcache": {
