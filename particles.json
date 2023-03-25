@@ -43,7 +43,7 @@
           "opacity": 1
         },
         "repulse": {
-          "distance": 200,
+          "distance": 400,
           "duration": 4
         }
       }
