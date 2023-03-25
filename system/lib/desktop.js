@@ -51,6 +51,7 @@ function screenInit() {
     if (localStorage.wallpaper) { setWallpaper(localStorage.wallpaper); }
     else { setWallpaper(vfs.vmem.wallpaper); }
     setApps();
+    setGames();
     showScreen();
 }
 
