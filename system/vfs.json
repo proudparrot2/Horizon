@@ -30,7 +30,7 @@
         "wallpaper": "system/ico/wall.png",
         "glct": "display0",
         "glts": "taskmenu",
-        "gamestaskbar": "gamemenu"
+        "gametaskbar": "gamemenu"
     },
     "fileformats": [
         {"ext": "", "name": "File", "openwith": ["com.textedit"]},
