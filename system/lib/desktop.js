@@ -17,7 +17,7 @@ function setGames() {
             <img src="${app.icon}">
             <p>${app.name}</p>
         </div>`;
-        document.getElementById(vfs.vmem.glts).append(div);
+        document.getElementById(vfs.vmem.gametaskbar).append(div);
     }
 }
 function setWallpaper(path) {

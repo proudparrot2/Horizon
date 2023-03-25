@@ -647,6 +647,7 @@ function addToTaskbar(windowid) {
 function openTaskMenu(perform = 'default') {
     vfs.vmem.activewindow = false;
     let taskmenu = document.getElementById('taskmenu');
+    openGamesMenu(perform = 'close')
     if (perform == 'close') {
         if (taskmenu.hasAttribute('opened')) {
             taskmenu.style.top = '-100%';
@@ -673,6 +674,7 @@ function openTaskMenu(perform = 'default') {
 function openGamesMenu(perform = 'default') {
     vfs.vmem.activewindow = false;
     let taskmenu = document.getElementById('gamemenu');
+    openTaskMenu(perform = 'close')
     if (perform == 'close') {
         if (taskmenu.hasAttribute('opened')) {
             taskmenu.style.top = '-100%';
