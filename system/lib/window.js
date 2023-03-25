@@ -1,5 +1,5 @@
 function startApp(package, params = {}) {
-    if (taskbar) { openTaskMenu(perform = 'close'); }
+    if (taskbar) { openTaskMenu(perform = 'close'); openGamesMenu(perform = 'close'); }
     fetch(package + '/app.cfg', { method: 'GET' })
     .then(res => res.json())
     .then(res => {
@@ -500,6 +500,7 @@ function doWithWindow(windowid, action) {
         hasdyn = thiswindow.querySelector('iframe');
         if (hasdyn) { hasdyn.focus(); }
         openTaskMenu(perform = 'close');
+        openGamesMenu(perform = 'close');
         for (let i = 0; i < vfs.vmem.windows.length; i += 1) {
             try {
                 thislitsk = document.getElementById('task' + String(vfs.vmem.windows[i]['realid']));
@@ -667,9 +668,11 @@ function openTaskMenu(perform = 'default') {
         }
     }
 }
+
+
 function openGamesMenu(perform = 'default') {
     vfs.vmem.activewindow = false;
-    let taskmenu = document.getElementById('taskmenu');
+    let taskmenu = document.getElementById('gamemenu');
     if (perform == 'close') {
         if (taskmenu.hasAttribute('opened')) {
             taskmenu.style.top = '-100%';
