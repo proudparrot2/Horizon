@@ -646,8 +646,13 @@ function addToTaskbar(windowid) {
 }
 function openTaskMenu(perform = 'default') {
     vfs.vmem.activewindow = false;
+    let gamemenu = document.getElementById('gamemenu');
     let taskmenu = document.getElementById('taskmenu');
-    openGamesMenu(perform = 'close')
+    if (gamemenu.hasAttribute('opened')) {
+        gamemenu.style.top = '-100%';
+        gamemenu.removeAttribute('opened');
+        document.querySelector('.startic').removeAttribute('active');
+    }
     if (perform == 'close') {
         if (taskmenu.hasAttribute('opened')) {
             taskmenu.style.top = '-100%';
@@ -673,25 +678,30 @@ function openTaskMenu(perform = 'default') {
 
 function openGamesMenu(perform = 'default') {
     vfs.vmem.activewindow = false;
-    let taskmenu = document.getElementById('gamemenu');
-    openTaskMenu(perform = 'close')
+    let gamemenu = document.getElementById('gamemenu');
+    let taskmenu = document.getElementById('taskmenu');
+    if (taskmenu.hasAttribute('opened')) {
+        taskmenu.style.top = '-100%';
+        taskmenu.removeAttribute('opened');
+        document.querySelector('.startic').removeAttribute('active');
+    }
     if (perform == 'close') {
-        if (taskmenu.hasAttribute('opened')) {
-            taskmenu.style.top = '-100%';
-            taskmenu.removeAttribute('opened');
+        if (gamemenu.hasAttribute('opened')) {
+            gamemenu.style.top = '-100%';
+            gamemenu.removeAttribute('opened');
             document.querySelector('.startic').removeAttribute('active');
         }
     }
     else {
-        if (taskmenu.hasAttribute('opened')) {
-            taskmenu.style.top = '-100%';
-            taskmenu.removeAttribute('opened');
+        if (gamemenu.hasAttribute('opened')) {
+            gamemenu.style.top = '-100%';
+            gamemenu.removeAttribute('opened');
             document.querySelector('.startic').removeAttribute('active');
         }
         else {
             doWithAllWindows('unactive');
-            taskmenu.style.top = '35px';
-            taskmenu.setAttribute('opened', '');
+            gamemenu.style.top = '35px';
+            gamemenu.setAttribute('opened', '');
             document.querySelector('.startic').setAttribute('active', '');
         }
     }
