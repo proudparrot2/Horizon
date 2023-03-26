@@ -1,6 +1,6 @@
 function setApps() {
     for (let app of vfs.applications) {
-        if (app.disabled) continue;
+        if (app.hidden) continue;
         
         let div = document.createElement('div');
         div.innerHTML = `
@@ -15,7 +15,7 @@ function setApps() {
 function setGames() {
     for (let app of vfs.games) {
 
-        if (app.disabled) continue;
+        if (app.hidden) continue;
         let div = document.createElement('div');
         div.innerHTML = `
         <div class="package" onclick="startApp('${app.path}')">

@@ -1,19 +1,20 @@
 {
     "applications": [
-        {"name": "Art Class", "icon": "apps/artclass/icon.png", "path": "apps/artclass", "hidden": false},
-        {"name": "Calculator", "icon": "apps/calculator/icon.png", "path": "apps/calculator", "hidden": false},
-        {"name": "Browser", "icon": "apps/browser/icon.png", "path": "apps/browser", "hidden": false},
-        {"name": "Utopia", "icon": "apps/utopia/icon.png", "path": "apps/utopia", "hidden": false},
-        {"name": "Virtual Machines", "icon": "apps/vms/icon.png", "path": "apps/vms", "hidden": false},
-        {"name": "Python 3.10.7", "icon": "apps/python3/icon.png", "path": "apps/python3", "hidden": false},
-        {"name": "Terminal", "icon": "apps/terminal/icon.png", "path": "apps/terminal", "hidden": false},
-        {"name": "Settings", "icon": "apps/settings/icon.png", "path": "apps/settings", "hidden": false},
+        {"name": "Browser", "icon": "apps/browser/browser.png", "path": "apps/browser"},
+        {"name": "VS Code", "icon": "apps/vscode/vscode.png", "path": "apps/vscode"},
+        {"name": "Discord", "icon": "apps/discord/discord.png", "path": "apps/discord"},
+        {"name": "Calculator", "icon": "apps/calculator/icon.png", "path": "apps/calculator"},
+        {"name": "Art Class", "icon": "apps/artclass/icon.png", "path": "apps/artclass"},
+        {"name": "Virtual Machines", "icon": "apps/vms/bootcamp.png", "path": "apps/vms"},
+        {"name": "Python 3.10.7", "icon": "apps/python3/icon.png", "path": "apps/python3"},
+        {"name": "Terminal", "icon": "apps/terminal/icon.png", "path": "apps/terminal"},
+        {"name": "Settings", "icon": "apps/settings/icon.png", "path": "apps/settings", "hidden": true},
         {"name": "Horizon Info", "icon": "apps/info/horizon.png", "path": "apps/info", "hidden": true}
         
     ],
     "games": [
-        {"name": "Retro Emulator", "icon": "apps/emulator/icon2.png", "path": "apps/emulator", "hidden": false},
-        {"name": "Minecraft 1.5.2", "icon": "apps/minecraft/icon.png", "path": "apps/minecraft", "hidden": false}
+        {"name": "Retro Emulator", "icon": "apps/emulator/icon2.png", "path": "apps/emulator"},
+        {"name": "Minecraft 1.5.2", "icon": "apps/minecraft/icon.png", "path": "apps/minecraft"}
     ], 
     "vmem": {
         "windows": [],
