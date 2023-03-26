@@ -1,20 +1,21 @@
 function setApps() {
     for (let app of vfs.applications) {
-        if (!app.disabled) {
-            let div = document.createElement('div');
-            div.innerHTML = `
-            <div class="package" onclick="startApp('${app.path}')">
-                <img src="${app.icon}">
-                <p>${app.name}</p>
-            </div>`;
-            document.getElementById(vfs.vmem.glts).append(div);
-        }
+        if (app.disabled) continue;
         
+        let div = document.createElement('div');
+        div.innerHTML = `
+        <div class="package" onclick="startApp('${app.path}')">
+            <img src="${app.icon}">
+            <p>${app.name}</p>
+        </div>`;
+        document.getElementById(vfs.vmem.glts).append(div);
+
     }
 }
 function setGames() {
     for (let app of vfs.games) {
-        if (app.disabled) return;
+
+        if (app.disabled) continue;
         let div = document.createElement('div');
         div.innerHTML = `
         <div class="package" onclick="startApp('${app.path}')">
@@ -22,6 +23,7 @@ function setGames() {
             <p>${app.name}</p>
         </div>`;
         document.getElementById(vfs.vmem.gametaskbar).append(div);
+    
     }
 }
 function setWallpaper(path) {
