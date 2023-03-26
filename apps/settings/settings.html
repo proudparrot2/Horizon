@@ -6,13 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Tilt+Warp&display=swap');
         body {
-            background-color: gray;
+            background-color: #151515;
+            color: white;
             text-align: center;
+            font-family: "DM Sans";
+        }
+
+        h1 {
+            font-family: "Tilt Warp";
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        input {
         }
     </style>
 </head>
 <body>
     <h1>Horizon Settings</h1>
+    <hr width="200px">
+
+    <input placeholder="Wallpaper Image URL" id="backgroundimage"> <button id="bgimg-btn">Confirm</button>
+
+    <script>
+        document.querySelector("#bgimg-btn").addEventListener("click", async () => {
+
+            var img = document.querySelector("#backgroundimage");
+            localStorage.setItem("backgroundImage", img.value);
+            img.value = ""
+            alert("Successfully set the wallpaper!")
+        })
+    </script>
 </body>
 </html>
