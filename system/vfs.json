@@ -1,18 +1,20 @@
 {
     "applications": [
-        {"name": "Art Class", "icon": "apps/artclass/icon.png", "path": "apps/artclass"},
-        {"name": "Calculator", "icon": "apps/calculator/icon.png", "path": "apps/calculator"},
-        {"name": "Browser", "icon": "https://6hpbu9.csb.app/logo.png", "path": "apps/browser", "disabled": true},
-        {"name": "Utopia", "icon": "apps/utopia/icon.png", "path": "apps/utopia"},
-        {"name": "Virtual Machines", "icon": "apps/vms/icon.png", "path": "apps/vms"},
-        {"name": "Python 3.10.7", "icon": "apps/python3/icon.png", "path": "apps/python3"},
-        {"name": "Terminal", "icon": "apps/terminal/icon.png", "path": "apps/terminal"}
+        {"name": "Art Class", "icon": "apps/artclass/icon.png", "path": "apps/artclass", "hidden": false},
+        {"name": "Calculator", "icon": "apps/calculator/icon.png", "path": "apps/calculator", "hidden": false},
+        {"name": "Browser", "icon": "apps/browser/icon.png", "path": "apps/browser", "hidden": false},
+        {"name": "Utopia", "icon": "apps/utopia/icon.png", "path": "apps/utopia", "hidden": false},
+        {"name": "Virtual Machines", "icon": "apps/vms/icon.png", "path": "apps/vms", "hidden": false},
+        {"name": "Python 3.10.7", "icon": "apps/python3/icon.png", "path": "apps/python3", "hidden": false},
+        {"name": "Terminal", "icon": "apps/terminal/icon.png", "path": "apps/terminal", "hidden": false},
+        {"name": "Settings", "icon": "apps/settings/icon.png", "path": "apps/settings", "hidden": false},
+        {"name": "Horizon Info", "icon": "apps/info/horizon.png", "path": "apps/info", "hidden": true}
         
     ],
     "games": [
-        {"name": "Retro Emulator", "icon": "apps/emulator/icon2.png", "path": "apps/emulator"},
-        {"name": "Minecraft 1.5.2", "icon": "apps/minecraft/icon.png", "path": "apps/minecraft"}
-    ],
+        {"name": "Retro Emulator", "icon": "apps/emulator/icon2.png", "path": "apps/emulator", "hidden": false},
+        {"name": "Minecraft 1.5.2", "icon": "apps/minecraft/icon.png", "path": "apps/minecraft", "hidden": false}
+    ], 
     "vmem": {
         "windows": [],
         "svcache": {
@@ -24,7 +26,7 @@
         "clickcycles": 0,
         "windowcounts": 0,
         "windowindexes": 0,
-        "taskbar": true,
+        "taskbar": false,
         "activewindow": true,
         "wallpaper": "system/ico/wall.png",
         "glct": "display0",
